@@ -41,25 +41,25 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="辛忠志" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7u9-Nl-y6N">
-                    <rect key="frame" x="319" y="562" width="43" height="17"/>
+                    <rect key="frame" x="319" y="552" width="43" height="17"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tn5-5w-11M">
-                    <rect key="frame" x="300.5" y="589" width="61.5" height="18"/>
+                    <rect key="frame" x="300.5" y="579" width="61.5" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="地址.png" translatesAutoresizingMaskIntoConstraints="NO" id="uWU-mZ-lSp">
-                    <rect key="frame" x="280.5" y="591.5" width="10" height="13"/>
+                    <rect key="frame" x="280.5" y="581.5" width="10" height="13"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="fJZ-gm-1To" firstAttribute="leading" secondItem="bKj-c1-XeW" secondAttribute="leading" id="Dc6-ZW-r0g"/>
-                <constraint firstAttribute="bottom" secondItem="tn5-5w-11M" secondAttribute="bottom" constant="60" id="FHk-dz-iak"/>
+                <constraint firstAttribute="bottom" secondItem="tn5-5w-11M" secondAttribute="bottom" constant="70" id="FHk-dz-iak"/>
                 <constraint firstItem="FPV-2Y-IXK" firstAttribute="top" secondItem="fJZ-gm-1To" secondAttribute="bottom" constant="10" id="GCi-Vb-NTH"/>
                 <constraint firstItem="FPV-2Y-IXK" firstAttribute="leading" secondItem="fJZ-gm-1To" secondAttribute="leading" id="HVS-02-oia"/>
                 <constraint firstItem="XWu-OE-KTB" firstAttribute="leading" secondItem="FPV-2Y-IXK" secondAttribute="trailing" constant="10" id="I1A-cz-cwD"/>

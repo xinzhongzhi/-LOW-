@@ -195,7 +195,7 @@
 }
 /*截屏功能*/
 -(UIImage *)captureScreenForView:(UIView *)currentView {
-    UIGraphicsBeginImageContext(currentView.frame.size);
+    UIGraphicsBeginImageContext(self.view.frame.size);
     [currentView.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
