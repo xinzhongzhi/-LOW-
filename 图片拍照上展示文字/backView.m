@@ -32,7 +32,6 @@
     
     self.dayLabel.text = dateStr1;
     /*系统年月日*/
-    
     NSDate*date = [NSDate date];
     NSCalendar*calendar = [NSCalendar currentCalendar];
     NSDateComponents*comps;

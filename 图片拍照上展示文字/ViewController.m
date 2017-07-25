@@ -163,34 +163,19 @@
     if(picker.sourceType == UIImagePickerControllerSourceTypeCamera)
         
     {
-        //图片存入相册
+        //获取当前的截图  苹果系统直接有方法可以截取当前试图的view大小的截图 就是背景View
+        //UIGraphicsBeginImageContext  这个方法是7.0之前的方法 用这个会造成 截屏的像素模糊
+        //        UIGraphicsBeginImageContext(self.BView.bounds.size);
         
-        /**/
-//        UIImage * image1 =  [self captureScreenForView:self.BView];
-//        self.imageView.image = image1;
-//        UIImageWriteToSavedPhotosAlbum(image1, nil, nil, nil);
+        UIGraphicsBeginImageContextWithOptions(self.BView.bounds.size, YES, 0.0);
+        [[[UIApplication sharedApplication] keyWindow] drawViewHierarchyInRect:CGRectMake(0, -70, HRWitch, HRHeight+70) afterScreenUpdates:YES];
+        //将ImageContext放入一个UIImage内然后清理掉这个ImageContext
+        UIImage * image1 = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
         
-        
-        //获取当前的截图
-        //创建一个新的ImageContext来绘制截图，你没有必要去渲染一个完整分辨率的高清截图，使用ImageContext可以节约掉不少的计算量
-//        UIGraphicsBeginImageContextWithOptions(CGSizeMake(HRWitch, HRHeight), YES, 1);
-//        [[[UIApplication sharedApplication] keyWindow] drawViewHierarchyInRect:CGRectMake(0, 130, HRWitch, HRHeight) afterScreenUpdates:YES];
-//        //将ImageContext放入一个UIImage内然后清理掉这个ImageContext
-//        UIImage * image1 = UIGraphicsGetImageFromCurrentImageContext();
-//        UIGraphicsEndImageContext();
-        
-        
-                self.imageView.image = image;
-        /*这里给图片做操做 把获取到的图片 上加文字*/
-        
-        
-        
-        
-        
-                UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
-        
-        
-        
+        self.imageView.image = image1;
+        /*把图片存到相册中*/
+        UIImageWriteToSavedPhotosAlbum(image1, nil, nil, nil);
     }
     /*取消隐藏*/
     self.BView.hidden = YES;
@@ -198,7 +183,6 @@
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
-
 //进入拍摄页面点击取消按钮
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
