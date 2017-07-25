@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="backView" customClass="backView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="系统时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKj-c1-XeW">
+                    <rect key="frame" x="25" y="48" width="69.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="系统年月日 星期一" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJZ-gm-1To">
+                    <rect key="frame" x="25" y="78.5" width="110" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.96078431369999995" green="0.2470588235" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FPV-2Y-IXK">
+                    <rect key="frame" x="25" y="104.5" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Nvv-wp-60l"/>
+                        <constraint firstAttribute="width" constant="20" id="rYP-QM-WRb"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="蜜糖网络" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWu-OE-KTB">
+                    <rect key="frame" x="55" y="107" width="53.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="辛忠志" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7u9-Nl-y6N">
+                    <rect key="frame" x="319" y="562" width="43" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tn5-5w-11M">
+                    <rect key="frame" x="300.5" y="589" width="61.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="地址.png" translatesAutoresizingMaskIntoConstraints="NO" id="uWU-mZ-lSp">
+                    <rect key="frame" x="280.5" y="591.5" width="10" height="13"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fJZ-gm-1To" firstAttribute="leading" secondItem="bKj-c1-XeW" secondAttribute="leading" id="Dc6-ZW-r0g"/>
+                <constraint firstAttribute="bottom" secondItem="tn5-5w-11M" secondAttribute="bottom" constant="60" id="FHk-dz-iak"/>
+                <constraint firstItem="FPV-2Y-IXK" firstAttribute="top" secondItem="fJZ-gm-1To" secondAttribute="bottom" constant="10" id="GCi-Vb-NTH"/>
+                <constraint firstItem="FPV-2Y-IXK" firstAttribute="leading" secondItem="fJZ-gm-1To" secondAttribute="leading" id="HVS-02-oia"/>
+                <constraint firstItem="XWu-OE-KTB" firstAttribute="leading" secondItem="FPV-2Y-IXK" secondAttribute="trailing" constant="10" id="I1A-cz-cwD"/>
+                <constraint firstItem="tn5-5w-11M" firstAttribute="trailing" secondItem="7u9-Nl-y6N" secondAttribute="trailing" id="LWq-1k-44c"/>
+                <constraint firstItem="tn5-5w-11M" firstAttribute="centerY" secondItem="uWU-mZ-lSp" secondAttribute="centerY" id="R1u-oX-UuT"/>
+                <constraint firstItem="bKj-c1-XeW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="48" id="Szo-jr-UlZ"/>
+                <constraint firstItem="XWu-OE-KTB" firstAttribute="centerY" secondItem="FPV-2Y-IXK" secondAttribute="centerY" id="cAA-J7-bbX"/>
+                <constraint firstItem="tn5-5w-11M" firstAttribute="top" secondItem="7u9-Nl-y6N" secondAttribute="bottom" constant="10" id="cff-wJ-Flo"/>
+                <constraint firstAttribute="trailing" secondItem="tn5-5w-11M" secondAttribute="trailing" constant="13" id="lUE-ie-gAx"/>
+                <constraint firstItem="bKj-c1-XeW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="sW7-xw-bxm"/>
+                <constraint firstItem="fJZ-gm-1To" firstAttribute="top" secondItem="bKj-c1-XeW" secondAttribute="bottom" constant="10" id="sdx-8n-hrB"/>
+                <constraint firstItem="tn5-5w-11M" firstAttribute="leading" secondItem="uWU-mZ-lSp" secondAttribute="trailing" constant="10" id="yeb-30-qOh"/>
+            </constraints>
+            <connections>
+                <outlet property="adressLabel" destination="tn5-5w-11M" id="Hm7-zx-SMe"/>
+                <outlet property="companyImage" destination="FPV-2Y-IXK" id="Vno-1R-I58"/>
+                <outlet property="companyName" destination="XWu-OE-KTB" id="vD1-K3-fEY"/>
+                <outlet property="dayLabel" destination="bKj-c1-XeW" id="xCi-M6-kL2"/>
+                <outlet property="nameLabel" destination="7u9-Nl-y6N" id="xfI-cm-jhA"/>
+                <outlet property="timeLabel" destination="fJZ-gm-1To" id="oUi-sx-r1f"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="64.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="地址.png" width="10" height="13"/>
+    </resources>
+</document>

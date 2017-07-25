@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C42633A21F26CE1C006BC291 /* backView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C42633A11F26CE1C006BC291 /* backView.xib */; };
+		C42633A51F26CE2E006BC291 /* backView.m in Sources */ = {isa = PBXBuildFile; fileRef = C42633A41F26CE2E006BC291 /* backView.m */; };
+		C42633AB1F26D3B3006BC291 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = C42633A71F26D3B3006BC291 /* Contents.json */; };
+		C42633AC1F26D3B3006BC291 /* 地址.png in Resources */ = {isa = PBXBuildFile; fileRef = C42633A81F26D3B3006BC291 /* 地址.png */; };
+		C42633AD1F26D3B3006BC291 /* 地址@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C42633A91F26D3B3006BC291 /* 地址@2x.png */; };
+		C42633AE1F26D3B3006BC291 /* 地址@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C42633AA1F26D3B3006BC291 /* 地址@3x.png */; };
 		C4BA96EB1F259F0A0061ED2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BA96EA1F259F0A0061ED2E /* main.m */; };
 		C4BA96EE1F259F0A0061ED2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BA96ED1F259F0A0061ED2E /* AppDelegate.m */; };
 		C4BA96F11F259F0A0061ED2E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BA96F01F259F0A0061ED2E /* ViewController.m */; };
@@ -35,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C42633A11F26CE1C006BC291 /* backView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = backView.xib; sourceTree = "<group>"; };
+		C42633A31F26CE2E006BC291 /* backView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = backView.h; sourceTree = "<group>"; };
+		C42633A41F26CE2E006BC291 /* backView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = backView.m; sourceTree = "<group>"; };
+		C42633A71F26D3B3006BC291 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C42633A81F26D3B3006BC291 /* 地址.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "地址.png"; sourceTree = "<group>"; };
+		C42633A91F26D3B3006BC291 /* 地址@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "地址@2x.png"; sourceTree = "<group>"; };
+		C42633AA1F26D3B3006BC291 /* 地址@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "地址@3x.png"; sourceTree = "<group>"; };
 		C4BA96E61F259F090061ED2E /* 图片拍照上展示文字.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "图片拍照上展示文字.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4BA96EA1F259F0A0061ED2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C4BA96EC1F259F0A0061ED2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +91,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C42633A61F26D3B3006BC291 /* 地址.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				C42633A71F26D3B3006BC291 /* Contents.json */,
+				C42633A81F26D3B3006BC291 /* 地址.png */,
+				C42633A91F26D3B3006BC291 /* 地址@2x.png */,
+				C42633AA1F26D3B3006BC291 /* 地址@3x.png */,
+			);
+			path = "地址.imageset";
+			sourceTree = "<group>";
+		};
 		C4BA96DD1F259F090061ED2E = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +125,14 @@
 		C4BA96E81F259F090061ED2E /* 图片拍照上展示文字 */ = {
 			isa = PBXGroup;
 			children = (
+				C42633A61F26D3B3006BC291 /* 地址.imageset */,
 				C4BA96EC1F259F0A0061ED2E /* AppDelegate.h */,
 				C4BA96ED1F259F0A0061ED2E /* AppDelegate.m */,
 				C4BA96EF1F259F0A0061ED2E /* ViewController.h */,
 				C4BA96F01F259F0A0061ED2E /* ViewController.m */,
+				C42633A31F26CE2E006BC291 /* backView.h */,
+				C42633A41F26CE2E006BC291 /* backView.m */,
+				C42633A11F26CE1C006BC291 /* backView.xib */,
 				C4BA96F21F259F0A0061ED2E /* Main.storyboard */,
 				C4BA96F51F259F0A0061ED2E /* Assets.xcassets */,
 				C4BA96F71F259F0A0061ED2E /* LaunchScreen.storyboard */,
@@ -207,6 +235,7 @@
 				TargetAttributes = {
 					C4BA96E51F259F090061ED2E = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = E6P5R37R82;
 						ProvisioningStyle = Automatic;
 					};
 					C4BA96FE1F259F0A0061ED2E = {
@@ -246,9 +275,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C42633AB1F26D3B3006BC291 /* Contents.json in Resources */,
+				C42633AC1F26D3B3006BC291 /* 地址.png in Resources */,
 				C4BA96F91F259F0A0061ED2E /* LaunchScreen.storyboard in Resources */,
+				C42633A21F26CE1C006BC291 /* backView.xib in Resources */,
 				C4BA96F61F259F0A0061ED2E /* Assets.xcassets in Resources */,
+				C42633AD1F26D3B3006BC291 /* 地址@2x.png in Resources */,
 				C4BA96F41F259F0A0061ED2E /* Main.storyboard in Resources */,
+				C42633AE1F26D3B3006BC291 /* 地址@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4BA96F11F259F0A0061ED2E /* ViewController.m in Sources */,
+				C42633A51F26CE2E006BC291 /* backView.m in Sources */,
 				C4BA96EE1F259F0A0061ED2E /* AppDelegate.m in Sources */,
 				C4BA96EB1F259F0A0061ED2E /* main.m in Sources */,
 			);
@@ -426,6 +461,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E6P5R37R82;
 				INFOPLIST_FILE = "图片拍照上展示文字/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "---.---------";
@@ -437,6 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E6P5R37R82;
 				INFOPLIST_FILE = "图片拍照上展示文字/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "---.---------";
@@ -509,6 +546,7 @@
 				C4BA97151F259F0A0061ED2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4BA97161F259F0A0061ED2E /* Build configuration list for PBXNativeTarget "图片拍照上展示文字Tests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +555,7 @@
 				C4BA97181F259F0A0061ED2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4BA97191F259F0A0061ED2E /* Build configuration list for PBXNativeTarget "图片拍照上展示文字UITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +564,7 @@
 				C4BA971B1F259F0A0061ED2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
